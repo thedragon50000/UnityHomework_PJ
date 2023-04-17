@@ -1,0 +1,16 @@
+{
+    "name": "DDSystemDemo",
+    "rootNamespace": "",
+    "references": [
+        "GUID:bb259b0f9ee11494b88972b601a7abcc"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
