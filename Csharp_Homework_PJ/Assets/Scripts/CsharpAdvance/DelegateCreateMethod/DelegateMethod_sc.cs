@@ -11,13 +11,7 @@ using UniRx.Triggers;
 public class DelegateMethod_sc : MonoBehaviour
 {
     public List<int> iList = new List<int> {1, 2, 3, 4};
-
-    #region Private Variables
-
-    private bool isIn = false;
-
-    #endregion
-
+    
     private void Start()
     {
         List<int> i = new List<int> {1, 2, 3, 7, 5};
