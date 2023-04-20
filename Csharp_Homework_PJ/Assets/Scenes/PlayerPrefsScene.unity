@@ -395,7 +395,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546648819}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d23f13ca33c13f4ca3355191e539516, type: 3}
   m_Name: 
@@ -421,17 +421,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546648819}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd838944d80ca9d419aa4fc363fb82d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  img_ary:
-  - {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  arySprite:
+  - {fileID: 21300000, guid: 26ece9a4375d8c44bad4e62642e4dfa9, type: 3}
+  - {fileID: 21300000, guid: 6b7a50fc0c433d04193fd01a59e98b04, type: 3}
+  - {fileID: 21300000, guid: c58a23af527b68d4198ad4ccaca55d33, type: 3}
   imgShow: {fileID: 120910235}
-  btn_ary:
+  aryBtn:
   - {fileID: 611115700}
   - {fileID: 1809893599}
   - {fileID: 1511162030}

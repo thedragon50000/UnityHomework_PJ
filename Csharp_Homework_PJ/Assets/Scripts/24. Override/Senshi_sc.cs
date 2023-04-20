@@ -6,9 +6,9 @@ public class Senshi_sc : CharacterData_sc
 {
     public Senshi_sc()
     {
-        _name = "魔法戰士";
-        _atk = 50;
-        _hp = 100;
+        Name = "魔法戰士";
+        Atk = 50;
+        Hp = 100;
     }
     public override void Skill1()
     {

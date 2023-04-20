@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Manager_sc : MonoBehaviour
 {
-    public List<Enemy_sc> list_enemy = new List<Enemy_sc>();
+    public List<Enemy_sc> listEnemy = new List<Enemy_sc>();
 
     // Start is called before the first frame update
     void Start()
@@ -13,14 +13,14 @@ public class Manager_sc : MonoBehaviour
         {
             EenemyType temp = (EenemyType) Random.Range(0, 3);
             Enemy_sc e = new Enemy_sc(temp);
-            list_enemy.Add(e);
+            listEnemy.Add(e);
         }
 
-        print(list_enemy.Count + "個敵人");
+        print(listEnemy.Count + "個敵人");
 
-        for (int i = 0; i < list_enemy.Count; i++)
+        for (int i = 0; i < listEnemy.Count; i++)
         {
-            print(list_enemy[i].enemyName + list_enemy[i].HP + "滴血");
+            print(listEnemy[i].enemyName + listEnemy[i].Hp + "滴血");
         }
     }
 
@@ -29,10 +29,10 @@ public class Manager_sc : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            for (int i = 0; i < list_enemy.Count; i++)
+            for (int i = 0; i < listEnemy.Count; i++)
             {
-                list_enemy[i].Injured(80);
-                print(list_enemy[i].enemyName + list_enemy[i].HP + "滴血");
+                listEnemy[i].Injured(80);
+                print(listEnemy[i].enemyName + listEnemy[i].Hp + "滴血");
             }
         }
     }

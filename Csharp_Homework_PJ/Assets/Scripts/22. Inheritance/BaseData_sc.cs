@@ -4,13 +4,28 @@ using UnityEngine;
 
 public class BaseData_sc : MonoBehaviour
 {
-    public string _name;
+    public string strClass;
 
-    public float _atk;
+    public float atk;
 
-    public float _hp;
+    public float hp;
 
+    public virtual void Skill1()
+    {
+    }
 
+    public virtual void Skill2()
+    {
+    }
+
+    public virtual void Skill3()
+    {
+    }
+
+    public virtual void Skill4()
+    {
+        
+    }
 
     // public BaseData_sc(string pName, int Atk, int Hp)
     // {

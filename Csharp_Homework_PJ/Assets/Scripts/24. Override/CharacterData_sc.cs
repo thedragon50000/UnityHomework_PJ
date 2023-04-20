@@ -6,9 +6,9 @@ using UnityEngine;
 
 public abstract class CharacterData_sc : MonoBehaviour
 {
-    protected string _name;
-    protected float _atk;
-    protected float _hp;
+    protected string Name;
+    protected float Atk;
+    protected float Hp;
 
     public virtual void Skill1()
     {
@@ -28,15 +28,5 @@ public abstract class CharacterData_sc : MonoBehaviour
     public virtual void Skill4()
     {
         print("技能4");
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 }

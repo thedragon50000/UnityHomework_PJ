@@ -5,32 +5,29 @@ using UnityEngine.UI;
 
 public class PlayerPrefsQ1_sc : MonoBehaviour
 {
-    public Sprite[] img_ary = new Sprite[3];
+    public Sprite[] arySprite = new Sprite[3];
 
     public Image imgShow;
 
+    public Button[] aryBtn = new Button[3];
 
-    public Button[] btn_ary = new Button[3];
-
-    // Start is called before the first frame update
     void Start()
     {
-        imgShow.sprite = img_ary[PlayerPrefs.GetInt("imgnumber")];
+        imgShow.sprite = arySprite[PlayerPrefs.GetInt("imgnumber")];
 
-        for (int i = 0; i < btn_ary.Length; i++)
+        for (int i = 0; i < aryBtn.Length; i++)
         {
             int temp = i;
-            btn_ary[i].onClick.AddListener(delegate
+            aryBtn[i].onClick.AddListener(delegate
             {
+                imgShow.sprite = arySprite[PlayerPrefs.GetInt("imgnumber")];
                 PlayerPrefs.SetInt("imgnumber", temp);
-                imgShow.sprite = img_ary[PlayerPrefs.GetInt("imgnumber")];
             });
-
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
 }
+/*下方三個按鈕(Button)，上方一個圖片顯示(Image)
+
+選擇按鈕後將其選擇的圖案顯示於上方Image。
+
+遊戲停止執行(關閉運作) = > 重新開啟後 => 上方Image顯示之前所選擇的圖片(有記憶儲存)。*/

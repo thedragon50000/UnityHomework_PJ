@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Enemy_sc : MonoBehaviour
 {
-    private int _hp = 0;
+    private int _hp;
 
-    public int HP
+    public int Hp
     {
-        get { return _hp; }
-        set
+        get => _hp;
+        private set
         {
             _hp = value;
             if (_hp <= 0)
@@ -24,7 +24,7 @@ public class Enemy_sc : MonoBehaviour
 
     public void Injured(int damage)
     {
-        HP -= damage;
+        Hp -= damage;
     }
 
     public Enemy_sc(EenemyType e)

@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class PlayerPrefsQ0_sc : MonoBehaviour
 {
-    private int spaceTimes;
+    private int _iSpaceTimes;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            spaceTimes = PlayerPrefs.GetInt("spacedown");
-            spaceTimes++;
-            PlayerPrefs.SetInt("spacedown", spaceTimes);
+            _iSpaceTimes = PlayerPrefs.GetInt("spacedown");
+            _iSpaceTimes++;
+            PlayerPrefs.SetInt("spacedown", _iSpaceTimes);
             print(PlayerPrefs.GetInt("spacedown") + "times");
         }
 
         if (Input.GetKeyDown(KeyCode.D))
         {
-            spaceTimes = 0;
-            PlayerPrefs.SetInt("spacedown", spaceTimes);
+            _iSpaceTimes = 0;
+            PlayerPrefs.SetInt("spacedown", _iSpaceTimes);
             print(PlayerPrefs.GetInt("spacedown") + "times");
         }
     }
