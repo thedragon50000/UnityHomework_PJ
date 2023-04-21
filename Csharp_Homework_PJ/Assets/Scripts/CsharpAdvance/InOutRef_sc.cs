@@ -35,18 +35,18 @@ namespace ParameterModifier
         public void Start()
         {
             Main1(null);
-            Main2(null);
-            Main3(null);
+            // Main2(null);
+            // Main3(null);
         }
 
         #endregion
 
         #region Private Methods
 
-        private static void Fun_in(string x, in ParentClass otherObj)
+        private static void Fun_in(string x, in ParentClass parent)
         {
             // otherObj = new ParentClass(); //不可重新實作入參
-            otherObj.x = x; //僅有物件本身為唯獨，物件內的屬性不受影響，因為是不同的參考位址
+            parent.x = x; //僅有物件本身為唯獨，物件內的屬性不受影響，因為是不同的參考位址
         }
 
         private static void Main1(string[] args)
@@ -87,22 +87,22 @@ namespace ParameterModifier
             };
         }
 
-        class testClassRef
+        class TestClassRef
         {
             public string x = "";
         }
         
         static void Main3(string[] args)
         {
-            testClassRef obj;
-            obj = new testClassRef(); //ref 參數使用時，需初始化
+            TestClassRef obj;
+            obj = new TestClassRef(); //ref 參數使用時，需初始化
         
             string x = "444";
             Fun_Ref(x, ref obj);
             Debug.Log(obj.x);
         }
         
-        static void Fun_Ref(string x, ref testClassRef otherobj)
+        static void Fun_Ref(string x, ref TestClassRef otherobj)
         {
             //方法內不強迫要重新實作ref 參數
             otherobj.x = x;
